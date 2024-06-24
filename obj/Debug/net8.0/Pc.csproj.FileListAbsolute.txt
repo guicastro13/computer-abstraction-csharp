@@ -97,3 +97,4 @@ C:\Users\guii_\csharp\Pc\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPl
 C:\Users\guii_\csharp\Pc\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\guii_\csharp\Pc\obj\Debug\net8.0\Pc.csproj.AssemblyReference.cache
 C:\Users\guii_\csharp\Pc\obj\Debug\net8.0\Pc.csproj.Up2Date
+C:\Users\guii_\csharp\Pc\obj\Debug\net8.0\Pc.sourcelink.json
