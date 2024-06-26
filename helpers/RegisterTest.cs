@@ -28,6 +28,7 @@ namespace Pc.helpers;
             Register8Bit register = new Register8Bit();
             string _byte = "01010100";
             register.WriteFromString(_byte);
-            Console.WriteLine(register.ParseMemory());
+            string expected = "01010100";
+            Assert.That(register.Read(), Is.EqualTo(expected));
         }
     }
