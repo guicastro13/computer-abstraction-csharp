@@ -11,8 +11,7 @@ public class Register8Bit : Register
     public Register8Bit() 
         : base(8)
     {
-        content = Enumerable.Repeat(new GatedLatch(), content.Length).ToArray();
-        Console.WriteLine();
+        content = Enumerable.Range(0, content.Length).Select(_ => new GatedLatch()).ToArray();
     }
 
     public StringBuilder ParseMemory() {
@@ -26,8 +25,9 @@ public class Register8Bit : Register
 
     public void WriteFromString(string _byte)
     {
-        for (var bit = 0; bit < _byte.Length; bit++)
+        for (var bit = 0; bit < content.Length; bit++)
         {
+            Console.WriteLine(_byte[bit]);
             content[bit].Access(Bit.ParseCharToEBIT(_byte[bit]), EBit.One);
         }
     }

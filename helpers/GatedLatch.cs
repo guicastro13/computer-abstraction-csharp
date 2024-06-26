@@ -3,10 +3,10 @@ using Pc.helpers;
 
 public class GatedLatch
 {
-    private static EBit wire1 = EBit.Zero;
-    private static EBit wire2 = EBit.Zero;
-    private static EBit wire3 = EBit.Zero;
-    private static EBit wire4 = EBit.Zero;
+    private EBit wire1 = EBit.Zero;
+    private EBit wire2 = EBit.Zero;
+    private EBit wire3 = EBit.Zero;
+    private EBit wire4 = EBit.Zero;
 
     public EBit Access(EBit data = EBit.Zero, EBit write = EBit.Zero)
     {

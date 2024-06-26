@@ -26,7 +26,7 @@ namespace Pc.helpers;
         public void Register8Bit_CorrectContentRegister()
         {
             Register8Bit register = new Register8Bit();
-            string _byte = "01010101";
+            string _byte = "01010100";
             register.WriteFromString(_byte);
             Console.WriteLine(register.ParseMemory());
         }
