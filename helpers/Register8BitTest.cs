@@ -1,6 +1,6 @@
 namespace Pc.helpers;
     [TestFixture]
-    public class RegisterTests
+    public class Register8BitTests
     {
         [Test]
         public void Register8Bit_CorrectSize()
