@@ -1,17 +1,18 @@
 using LogicalGate;
+using Pc.helpers;
 
-public static class GatedLatch
+public class GatedLatch
 {
-    private static Bit wire1 = Bit.Zero;
-    private static Bit wire2 = Bit.Zero;
-    private static Bit wire3 = Bit.Zero;
-    private static Bit wire4 = Bit.Zero;
+    private static EBit wire1 = EBit.Zero;
+    private static EBit wire2 = EBit.Zero;
+    private static EBit wire3 = EBit.Zero;
+    private static EBit wire4 = EBit.Zero;
 
-    public static Bit Latch(Bit data = Bit.Zero, Bit write = Bit.Zero)
+    public EBit Access(EBit data = EBit.Zero, EBit write = EBit.Zero)
     {
         wire1 = Gates.And(data, write);
         wire2 = Gates.Not(Gates.And(Gates.Not(data), write));
-        Bit previousWire3, previousWire4;
+        EBit previousWire3, previousWire4;
         do
         {
             previousWire3 = wire3;
@@ -19,7 +20,7 @@ public static class GatedLatch
             wire3 = Gates.Or(wire1, wire4);
             wire4 = Gates.And(wire3, wire2);
         } while (wire3 != previousWire3 || wire4 != previousWire4);
-
+        
         return wire4;
     }
     

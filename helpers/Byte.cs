@@ -1,9 +1,10 @@
+namespace Pc.helpers;
 class Byte {
-    public Bit[] _byte { get; set; }
+    public EBit[] _Byte { get; set; }
     public Byte() {
-        _byte = new Bit[8];
+        _Byte = new EBit[8];
         for (int i = 0; i < 8; i++) {
-            _byte[i] = new Bit();
+            _Byte[i] = new EBit();
         }
     }
 }

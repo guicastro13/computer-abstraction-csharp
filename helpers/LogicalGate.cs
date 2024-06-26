@@ -1,38 +1,40 @@
 
+using Pc.helpers;
+
 namespace LogicalGate
 {
     static public class Gates
     {
-        static public Bit Not(Bit a)
+        static public EBit Not(EBit a)
         {
-            return a == Bit.Zero ? Bit.One : Bit.Zero;
+            return a == EBit.Zero ? EBit.One : EBit.Zero;
         }
-        static public Bit And(Bit a, Bit b)
+        static public EBit And(EBit a, EBit b)
         {
-            return a == Bit.One && b == Bit.One ? Bit.One : Bit.Zero;
-        }
-
-        static public Bit Or(Bit a, Bit b)
-        {
-            return a == Bit.One || b == Bit.One ? Bit.One : Bit.Zero;
+            return a == EBit.One && b == EBit.One ? EBit.One : EBit.Zero;
         }
 
-        static public Bit Nand(Bit a, Bit b)
+        static public EBit Or(EBit a, EBit b)
+        {
+            return a == EBit.One || b == EBit.One ? EBit.One : EBit.Zero;
+        }
+
+        static public EBit Nand(EBit a, EBit b)
         {
             return Not(And(a, b));
         }
 
-        static public Bit Nor(Bit a, Bit b)
+        static public EBit Nor(EBit a, EBit b)
         {
             return Not(Or(a, b));
         }
 
-        static public Bit Xor(Bit a, Bit b)
+        static public EBit Xor(EBit a, EBit b)
         {
-            return a != b ? Bit.One : Bit.Zero;
+            return a != b ? EBit.One : EBit.Zero;
         }
 
-        static public Bit Xnor(Bit a, Bit b)
+        static public EBit Xnor(EBit a, EBit b)
         {
             return Not(Xor(a, b));
         }
