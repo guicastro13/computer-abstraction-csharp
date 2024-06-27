@@ -1,4 +1,4 @@
-namespace Pc.helpers;
+namespace Pc.helpers.register;
 [TestFixture]
 public class Register16BitTests
 {

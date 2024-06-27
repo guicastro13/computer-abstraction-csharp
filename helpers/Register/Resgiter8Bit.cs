@@ -1,10 +1,10 @@
 using System.Text;
 
-namespace Pc.helpers;
-public class Register16Bit: Register
+namespace Pc.helpers.register;
+public class Register8Bit : Register
 {
-    public Register16Bit() 
-        : base(16)
+    public Register8Bit() 
+        : base(8)
     {
         content = Enumerable.Range(0, content.Length).Select(_ => new GatedLatch()).ToArray();
     }
