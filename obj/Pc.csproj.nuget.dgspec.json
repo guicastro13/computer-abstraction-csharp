@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guii_\\csharp\\Pc\\Pc.csproj": {}
+    "/Users/guilhermecastro/projetos-estudos/csharp/computer-abstraction-csharp/Pc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guii_\\csharp\\Pc\\Pc.csproj": {
+    "/Users/guilhermecastro/projetos-estudos/csharp/computer-abstraction-csharp/Pc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guii_\\csharp\\Pc\\Pc.csproj",
+        "projectUniqueName": "/Users/guilhermecastro/projetos-estudos/csharp/computer-abstraction-csharp/Pc.csproj",
         "projectName": "Pc",
-        "projectPath": "C:\\Users\\guii_\\csharp\\Pc\\Pc.csproj",
-        "packagesPath": "C:\\Users\\guii_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guii_\\csharp\\Pc\\obj\\",
+        "projectPath": "/Users/guilhermecastro/projetos-estudos/csharp/computer-abstraction-csharp/Pc.csproj",
+        "packagesPath": "/Users/guilhermecastro/.nuget/packages/",
+        "outputPath": "/Users/guilhermecastro/projetos-estudos/csharp/computer-abstraction-csharp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\guii_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/guilhermecastro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
